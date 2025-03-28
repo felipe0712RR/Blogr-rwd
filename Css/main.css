@@ -30,9 +30,19 @@ desktop first
 } */
 
 html {
-    font-size: 62.5%;         /* 16*0.625 = 10 px  conversion de base 10*/
+    font-size: 62.5%;         /* 16 px * 0.625 = 10 px  conversion de base 10*/
 }
 
 body {
-    font-size: 1.6rem;
+    color: pink;
+    font-size: 1.6rem;       /** 14px; */
 }
+.container {
+    border: 2px dotted blue;
+    max-width: 96vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/**media queries*/
