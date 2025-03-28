@@ -28,3 +28,11 @@ desktop first
 .footer{
     background-color: blue;
 } */
+
+html {
+    font-size: 62.5%;         /* 16*0.625 = 10 px  conversion de base 10*/
+}
+
+body {
+    font-size: 1.6rem;
+}
