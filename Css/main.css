@@ -1,0 +1,30 @@
+/* body{
+    background-color: rgb(102, 200, 230);
+}
+
+1.lo que este afuera de afuera de un media query es CSS enfocado al movil ( el mas pequeño)
+2.los mediaqueries van a atacar al siguiente dispositi mas gran grande 
+3.las condiciones del media query deben atacar al ancho minimo(min-width)
+
+desktop first
+1.todos lo que este por fuera de un media query es Css enfocado al desktop (el mas grande)
+2.los mediaqueries van a atacar al siguiente dispositivo mas pequeño 
+3.
+.header{
+    background-color: brown;
+}
+@media ( min-width: 567px ) {
+    .header {
+        background-color: orange;
+    }
+}
+
+@media ( min-width: 768px ) {
+    .header{
+        background-color: crimson;
+    }
+}
+
+.footer{
+    background-color: blue;
+} */
