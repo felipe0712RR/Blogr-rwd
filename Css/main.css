@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --color-Bittersweet:#fe7467;
     --color-Jacarta:#3a3d5c;
@@ -17,8 +19,8 @@ html {
 }
 
 body {
-    
-    font-size: 1.6rem;       /** 14px; */
+    font-size: 1.6rem;          /** 14px; */
+    font-family: "Inter", sans-serif;   
 }
 
 .main-container {
@@ -37,13 +39,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 8rem;
+    height: 8rem;
+
 }
 
+.Logo-site {
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
 .navbar__center {
     display: flex   ;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+}
+
+.icon-hamburguer {
+    color: white;
+    font-size: 2.4rem;
 }
 
 .navbar__right {
@@ -68,13 +84,32 @@ body {
     display: none;
 }
 
+
 .btn {
-    border: 1px solid yellow;
+    border: 1px solid white;
     padding: .6px 1.2rem;
     border-radius: 1.5rem;
     box-sizing: border-box;
     text-decoration: none;
 }
+
+.btn-primary {
+    background: white;
+    border:  1px solid white;
+    color: var(--color-Bittersweet);
+}
+
+.btn-outline-primary {
+    border: 1px solid white;
+    color: white;
+}
+
+
+.btn-secondary {
+    border: 1px solid transparent;
+    color: white;
+}
+
 
 /**main*/
 
@@ -91,7 +126,7 @@ body {
 }
 
 .container {
-    border: 2px dotted rgb(61, 13, 155);
+    /* border: 2px dotted rgb(61, 13, 155); */
     max-width: 96vw;
     margin: 0 auto;
     box-sizing: border-box;
@@ -123,20 +158,27 @@ body {
         max-width: 72rem;
         padding: 0 2.4rem;
     }
+    .navbar__left {
+        flex-basis: 16rem;
+    }
+    .navbar__center {
+        flex-grow: 1;
+    }
     .navbar__right {
         display: block;
-}
-.menu\.main {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-}
-.icon-hamburguer {
-    display: none;
-}
+        flex-basis: 16rem;
+    }
+    .menu\.main {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+    .icon-hamburguer {
+        display: none;
+    }
 }
 
 @media ( min-width: 992px) {
