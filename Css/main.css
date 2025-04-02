@@ -119,6 +119,20 @@ body {
     height: 100vh;
 }
 
+/** main call to action*/
+
+.section-call-to-action.section {
+    background: var(--color-Bittersweet);
+    color: white;
+    height: 44rem;
+    max-height: 44rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 0 12rem;
+}
+
 /**footer*/
 
 .footer {
