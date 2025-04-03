@@ -20,7 +20,8 @@ html {
 
 body {
     font-size: 1.6rem;          /** 14px; */
-    font-family: "Inter", sans-serif;   
+    font-family: "Inter", sans-serif;
+    text-align: center;
 }
 
 .main-container {
@@ -115,8 +116,6 @@ body {
 
 .main {
     flex-grow: 1;
-    max-height: 100vh;
-    height: 100vh;
 }
 
 /** main  section call to action*/
@@ -134,13 +133,55 @@ body {
 }
 
 .buttons {
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.4rem;
     margin: 4rem 0;
 }
+
+/** main  designed for the future */
+
+.content-designed-for-the-future {
+    margin: 9rem 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-designed-for-the-future {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.content-designed-for-the-future p {
+    text-align: left;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+}
+
+.section-2 {
+    width: 84%;
+    margin: 0 auto;
+}
+
+@media ( min-width:567px) {
+    .content-designed-for-the-future {
+        flex-direction: row-reverse;
+    }
+    .img-designed-for-the-future {
+        margin-bottom: 0%;
+}
+}
+@media ( min-width:768px) {
+    .content-designed-for-the-future {
+        flex-direction: row-reverse;
+    }
+}
+
 
 /**footer*/
 
@@ -201,6 +242,12 @@ body {
     }
     .icon-hamburguer {
         display: none;
+    }
+    /** main: swction designed for the future*/
+
+    .section-1
+    .section-2 {
+        flex: 1;
     }
 }
 
